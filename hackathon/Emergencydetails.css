@@ -1,0 +1,72 @@
+*{
+    margin: 0px;
+    border: border-box;
+    font-family: 14px Arial, sans-serif; 
+
+}
+
+/* ENTER CALL DETAIL BLOCK */
+.hero-msg{
+    background-color:rgb(52, 211, 174);
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    height: 60px;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+/*  TOP IMAGE */
+.page-banner{
+    background-image: url("pic5\'\'.png");
+    background-size: cover;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* INFO FORM */
+form{
+    border: 2px solid black ;
+    border-radius: 20px;
+    text-align: center;
+    padding: 30px;
+    margin: auto;
+    width: 70%;
+}
+
+label{
+    margin: 10px;
+    font-size: large;
+    font-weight: bold;
+    
+}
+input,select,option{
+    padding: 5px;
+    margin: 5px;
+    font-size: large;
+    border-color: rgb(1, 1, 32);
+    border-style: solid;
+    border-radius: 10px;
+}
+button{
+    font-size: medium;
+    font-weight: bold;
+    margin: 20px;
+    padding: 10px 30px;
+    background-color: rgb(52, 211, 174);
+    color: white;
+    border-radius: 20px;
+}
+button:hover{
+    color:  rgb(52, 211, 174);
+    background-color: white;
+}
+p{
+    margin: 10px;
+}

@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: rgb(232, 196, 218);
+}
+
+.herosection{
+    background-image: url("https://cdn.pixabay.com/photo/2017/07/31/11/21/people-2557396_960_720.jpg");
+    background-size: cover;
+    height: 600px;
+    width: 100;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.hero-msg{
+    background-color: rgb(236, 167, 210);
+    font-weight: 700;
+    font-family: Prestina;
+    height: 80px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #333;
+    background-color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+h3{
+    background-color: #f9e7e7;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin-bottom: 10px;
+}
+section {
+    margin-bottom: 30px;
+}
+
+.border{
+    margin: 20px;
+    border: 5px solid #faf8f8;
+    border-radius: 10px;
+    display: flex;
+    padding: 20px;
+}
+
+.border1{
+    margin: 20px;
+    background-color: #f29dc2;
+    border: 3px solid #faf8f8;
+    border-radius: 10px;
+    width: 400px;
+    padding: 20px;
+}

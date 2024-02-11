@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: 'Roboto',sans-serif;
+    background-image:linear-gradient(to bottom right,#CC2B5E,#FF5858);
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    min-height:100vh;
+    margin:0;
+    
+  }
+  .container{
+    background-color: rgb(250, 243, 243);
+    border-radius:5px;
+    box-shadow: 0 2px 5px rgba(103, 11, 11, 0.3);
+    width:400px;
+    max-width:100%;
+  }
+  .header{
+    background:#232734;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px 40px;
+    border-radius: 4px 4px 0px 0px;
+  }
+  .header h2{
+    margin:0;
+    color: white;
+    font-family: sans-serif;
+    
+  }
+  .form{
+    padding: 30px 40px;
+  }
+  .form-control{
+    margin-bottom: 1px;
+    padding-bottom:20px;
+    position: relative;
+  }
+  .form-control label{
+    display: inline-block;
+    margin-bottom:5px; 
+    font-size: large;
+  }
+
+
+  .form-control input{
+    border: 3px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width:100%;
+    font-size:14px;
+    padding: 5px;
+  }
+  .form-control.success input{
+    border-color: #2ecc71;
+  }
+  
+  .form-control.error input{
+    border-color: #e74c3c;
+  }
+  .form-control i{
+    visibility: hidden;
+    position: absolute;
+    top: 26px;
+    right: 10px;
+  }
+  .form-control.success i.check-circle{
+        visibility: visible;
+        content: '\2705';
+  }
+  .form-control.error i.emark{
+    content: "\0021";
+    visibility: visible;
+}
+
+  .form-control small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left:0;
+
+  }  
+  .form-control.error small{
+    color: #ca665b;
+    visibility: visible;
+  }
+  .form button{
+    background:#232734;
+    border: 2px solid #f0f0f0;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+  }
+  .form button:hover{
+    background:#FF5858;
+  }
+  .captcha-input{
+    /* border: 2px solid #FF5858; */
+    /* padding: 4px; */
+    background: #a9a8a8;
+    border-radius: 4px;
+    padding: 5px 8px 5px 8px;
+  }
+
+  .button-c{
+    cursor: default;
+    width: 250px;
+
+    /* visibility: visible; */
+  }

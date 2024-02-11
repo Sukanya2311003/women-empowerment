@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    font-family: "Raleway", Sans-serif;
+    border: border-box;
+}
+
+/* GENDER BASED ABUSE HEADING */
+h1{
+    color: white;
+    font-size: 2.5rem;
+    background-color: rgb(192, 107, 215);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom : 20px
+}
+
+/* WRITTEN CONTENT */
+.main_content{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+
+/* CONTENT BORDER */
+.border{
+    margin: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+h2{
+    color: rgb(192, 107, 215);
+}
+
+/* EMERGENCY */
+form{
+    border: 2px solid #949494 ;
+    border-radius: 20px;
+    text-align: center;
+    padding: 30px;
+    margin: auto;
+    font-size: x-large;
+    width: 70%;
+}
+
+label{
+    margin: 10px;
+    font-size: large;
+    font-weight: bold;
+    
+}
+input,select,option{
+    padding: 5px;
+    margin: 5px;
+    font-size: large;
+    border-color: rgb(118, 118, 119);
+    border-style: solid;
+    border-radius: 10px;
+    text-align: center;
+}
+button{
+    font-size: medium;
+    font-weight: bold;
+    margin: 20px;
+    padding: 10px 30px;
+    background-color:rgb(192, 107, 215);
+    color: white;
+    border-radius: 20px;
+}
+button:hover{
+    color:   rgb(192, 107, 215);
+    background-color: white;
+}

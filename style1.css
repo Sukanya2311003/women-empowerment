@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background: #ffffff; /* Add your desired background color */
+    border-bottom: 1px solid #e6ecf0; /* Add a border for separation */
+    padding: 10px 0; /* Add padding for spacing */
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.top-bar-menu {
+    display: flex;
+}
+
+.top-bar-menu__item {
+    font-size: 19px;
+    color: #b7032acb;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.top-bar-menu__item:hover {
+    background: rgba(29, 161, 242, 0.1);
+    color: #f21d2b;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.top-bar-menu__item-icon {
+    height: 26px;
+    margin-right: 20px;
+}
+
+
+.layout__main {
+    
+    max-width: 800px; 
+    margin: 20px auto; 
+    padding: 20px; 
+}
+
+.forum-post {
+    display: flex;
+    border-bottom: 1px solid #e6ecf0;
+    margin-bottom: 2px;
+    padding: 10px 15px;
+}
+
+.forum-post:hover {
+    background: rgba(0, 0, 0, 0.03);
+    cursor: pointer;
+}
+
+.forum-post__author-logo {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.forum-post__header {
+    display: flex;
+}
+
+.forum-post__author-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #14171a;
+    margin-right: 5px;
+}
+
+.forum-post__publish-time {
+    margin-left: 5px;
+    color: #657786;
+}
+
+.forum-post__content {
+    font-size: 15px;
+    color: #14171a;
+}
+
+.layout__right-sidebar-container {
+    /* Adjust right sidebar container styling as needed */
+    flex: 1;
+    margin-left: 20px; /* Add margin for spacing */
+}
+.email-signup input {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+}
+
+.email-signup button {
+    background-color: #db0001;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+.trends-for-you {
+    background: #faf5f8;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+}
+
+.trends-for-you__block {
+    border-bottom: 1px solid #e6ecf0;
+    padding: 10px 0; /* Adjust vertical padding */
+}
+
+.trends-for-you__block:last-child {
+    border-bottom: none;
+}
+
+.trends-for-you__heading {
+    font-size: 19px;
+    font-weight: bold;
+    color: #14171a;
+}
+
+.trends-for-you__trend-name {
+    font-size: 15px;
+    color: #14171a;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 2px;
+}
+
+.trends-for-you__meta-information {
+    font-size: 13px;
+    font-weight: 300;
+    color: #657786;
+}

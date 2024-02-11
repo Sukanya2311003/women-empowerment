@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Emergency Details</title>
+    <link rel="stylesheet" href="Emergencydetails.css">
+</head>
+<body>
+
+    <div class="page-banner" role="listbox"></div>
+    
+    <div class="hero-section">
+        <div class="hero-msg">
+            <p>Enter your calling details</p>
+        </div>
+    </div>
+    
+    <p>&nbsp;</p>
+
+    <!-- FORM TO FILL EMERGENCY DETAILS -->
+    <form action="/save" method="post">
+
+        <label for="username">Name:</label>
+        <input type="text" id="username" name="username" placeholder="Enter name" required>
+        <br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter age" required>
+        <br>
+        <label for="state">Residential State:</label>
+        <input type="text" id="state" name="state" placeholder="Enter state name" required>
+        <br>
+        <label for="city">City / District:</label>
+        <input type="text" id="city" name="city" placeholder="Enter city name" required>
+        <br>
+        <label for="emergencyContacts1">Enter Emergency Contact 1:</label>
+        <input type="text" id="emergencyContacts1" placeholder="Enter name"required>
+        <label for="number1">Enter Contact Number :</label>
+        <input type="number" id="number1" placeholder="Enter number"required>
+        <br>
+        <label for="emergencyContacts2">Enter Emergency Contact 2:</label>
+        <input type="text" id="emergencyContacts2" placeholder="Enter name"required>
+        <label for="number2">Enter Contact Number :</label>
+        <input type="number" id="number2" placeholder="Enter number"required>
+        <br>
+
+        <button onclick="saveEmergencyContacts()">Save Contacts</button>
+    </form>
+
+    <p>&nbsp;</p>
+
+    
+    <p>&nbsp;</p>
+
+    <script>
+        function saveEmergencyContacts() {
+            const emergencyContacts = document.getElementById("emergencyContacts").value;
+            alert(`Emergency Contacts Saved: ${emergencyContacts}`);
+            
+        }
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
+        }
+
+        function showPosition(position) {
+            const latitude = position.coords.latitude;
+            const longitude = position.coords.longitude;
+            alert(`Your location: ${latitude}, ${longitude}`);
+            
+        }
+    </script>
+
+    <button onclick="getLocation()">Get My Location</button>
+</body>
+</html>

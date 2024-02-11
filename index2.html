@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style2.css" />
+    <title>Finance</title>
+     
+</head>
+
+<body onload="getRandom()">
+    <div class="container">
+        <div class='header'>
+            <h2>LOAN APLLICATION PAGE </h2>
+        </div>
+        <form class='form' id='form' method="GET" action="confirmation.html">
+            <div class='form-control'>
+                <label for="FullName">Full Name</label>
+                <input placeholder="please enter your name" id="FullName" autocomplete="off" type="text" required>
+                <i class="check-circle">&#9989</i>
+                <i class="emark">
+                    &#10071</i>
+                <small></small>
+            </div>
+            <div class='form-control'>
+                <label for="Email">Email</label>
+                <input placeholder="please enter Email" id="Email" autocomplete="off" type="email" required>
+                <i class="check-circle">&#9989</i>
+                <i class="emark">&#10071</i>
+                <small>Error message</small>
+            </div>
+            <div class='form-control'>
+                <label for="PAN">PAN</label>
+                <input placeholder="please enter PAN" id="PAN" autocomplete="off" required>
+                <i class="check-circle">&#9989</i>
+                <i class="emark">&#10071</i>
+                <small>Error message</small>
+            </div>
+            <div class='form-control'>
+                <label for="Amount">Loan Amount</label>
+                <input placeholder="please enter Loan amount" id="Amount" autocomplete="off" type="number" required>
+                <i class="check-circle">&#9989</i>
+                <i class="emark">&#10071</i><br>
+                <small>Error message</small>
+                <p id ="amount-string"></p>
+            </div>
+            <div class='form-control'>
+                <label for="Captcha" id="captcha-label" ><span class = "captcha-input" id="captcha-input" >0 + 2 = ?</span> </label>
+                <a class="button-c" onclick="getRandom()">&#128472 Refresh</a>
+                <input placeholder="enter sum of given numbers" id="Captcha" autocomplete="off" type="number" required>
+                <i class="check-circle">&#9989</i>
+                <i class="emark">&#10071</i><br>
+                <small>Error message</small>
+            </div>
+            <button id= "button-s">SUBMIT</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

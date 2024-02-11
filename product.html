@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    margin-bottom: 60px;
+    
+  }
+  
+  .product {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    margin-bottom: 30px;
+    
+  }
+  .product:hover {
+  transform: scale(1.05);
+}
+  
+  .product img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .product h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .product p.price {
+    margin: 5px 0 15px;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .add-to-cart-btn {
+    background-color:rgb(255, 37, 92);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #1aabf3;
+  }
+
+  
+</style>
+
+
+</head>
+<body>
+    <h1 style="text-align: center; margin-top: 100px;padding-bottom: 40px; font-size:40px;color: rgb(255, 37, 92);">Purchase Essential Safety Products At Cheap Prices </h1>
+    <div class="products-container" >
+  <div class="product">
+    <img src="https://cdn.pixabay.com/photo/2018/04/16/16/26/best-3325102_1280.jpg" alt="Product 1">
+    <h3>Pepper Spray</h3>
+    <p class="price">$10</p>
+    <button class="add-to-cart-btn" onclick="addToCart('Pepper Spray', 10)">Add to Cart</button>
+  </div>
+  <div class="product">
+    <img src="https://media.istockphoto.com/id/515783371/photo/senior-citizens-panic-button.jpg?s=612x612&w=0&k=20&c=xTk9xtGgFaDV2Y2FzBrW1D85HRnFz98qPNQUM_W-qwU=" alt="Product 2">
+    <h3>Personal Alarm</h3>
+    <p class="price">$15</p>
+    <button class="add-to-cart-btn" onclick="addToCart('Personal Alarm', 15)">Add to Cart</button>
+  </div>
+  <div class="product">
+    <img src="https://media.istockphoto.com/id/498742480/photo/braided-laces-keychain-bludgeon-for-self-defense-white-background.jpg?s=612x612&w=0&k=20&c=rha3_4HOch4F1abXvnnmiLrAq_hh8a_tpDpkpZ9oF30=" alt="Product 3">
+    <h3>Self-Defense Keychain</h3>
+    <p class="price">$8</p>
+    <button class="add-to-cart-btn" onclick="addToCart('Self-Defense Keychain', 8)">Add to Cart</button>
+  </div>
+  <div class="product">
+    <img src="https://media.istockphoto.com/id/139904267/photo/closeup-of-life-vest.jpg?s=612x612&w=0&k=20&c=TD9YW9B8AJ158W5QUsOelnVKsAFyOYMm1x6XnllCtAk=" alt="Product 4">
+    <h3>Emergency Whistle</h3>
+    <p class="price">$5</p>
+    <button class="add-to-cart-btn" onclick="addToCart('Emergency Whistle', 5)">Add to Cart</button>
+  </div>
+  <div class="product">
+    <img src="https://media.istockphoto.com/id/157427831/photo/black-taser-with-part-unattached.jpg?s=612x612&w=0&k=20&c=6mbKTk7g-W3s-YZxEcXcMBUGTW_nzIIsUEvdlec0oNk=" alt="Product 4">
+    <h3>Stun Gun</h3>
+    <p class="price">$5</p>
+    <button class="add-to-cart-btn" onclick="addToCart('Emergency Whistle', 5)">Add to Cart</button>
+  </div>
+  <div class="product">
+    <img src="https://media.istockphoto.com/id/157649325/photo/emergency-call-system.jpg?s=612x612&w=0&k=20&c=DxZ6a1-HnnTwYucmulWOCLgh0giXJwaeGFkCzbq7PiA=" alt="Product 4">
+    <h3>Emergency Contact Bracelet</h3>
+    <p class="price">$5</p>
+    <button class="add-to-cart-btn" onclick="addToCart('Emergency Whistle', 5)">Add to Cart</button>
+  </div>
+  <div class="product">
+    <img src="https://media.istockphoto.com/id/1372079032/photo/airtag.jpg?s=612x612&w=0&k=20&c=bcgXgtpVQjJGfJOsoCrCQBhE40c6_e4IfHBXW0M2rVQ=" alt="Product 4">
+    <h3>GPS Tracker</h3>
+    <p class="price">$5</p>
+    <button class="add-to-cart-btn" onclick="addToCart('Emergency Whistle', 5)">Add to Cart</button>
+  </div>
+  <div class="product">
+    <img src="https://media.istockphoto.com/id/1164275679/photo/camera-lens-with-green-backlight-side-view-of-the-lens-of-camera-on-green-background.jpg?s=612x612&w=0&k=20&c=RIin9PfBeGf1-jHOU2tA0ARutlgdxnNBIg7iG-deaTI=" alt="Product 4">
+    <h3>Peephole Cameras</h3>
+    <p class="price">$5</p>
+    <button class="add-to-cart-btn" onclick="addToCart('Emergency Whistle', 5)">Add to Cart</button>
+  </div>
+  
+</div>
+<script>
+    let cartItems = [];
+let cartTotal = 0;
+
+function addToCart(itemName, itemPrice) {
+  cartItems.push({ name: itemName, price: itemPrice });
+  cartTotal += itemPrice;
+  updateCart();
+}
+
+function updateCart() {
+  let cartItemsElement = document.getElementById('cart-items');
+  cartItemsElement.innerHTML = '';
+  cartItems.forEach(item => {
+    let li = document.createElement('li');
+    li.textContent = `${item.name}: $${item.price}`;
+    cartItemsElement.appendChild(li);
+  });
+  document.getElementById('cart-total').textContent = `$${cartTotal}`;
+}
+
+</script>
+
+</body>
+</html>

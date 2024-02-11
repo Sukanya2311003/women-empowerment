@@ -1,0 +1,96 @@
+*{
+    margin: 0px;
+    border: border-box;
+    font-family:Arial, sans-serif; 
+}
+
+/* MAIN HEADING */
+h1{
+    font-size: 4rem;
+    color: white;
+    display: flex;
+    background-image: url('pic6.jpg');
+    height: 400px;
+    font-family: 'Times New Roman';
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+h2{
+    font-size: 2rem;
+    text-align: center;
+    margin: 10px;
+}
+
+/* TABLE HEADINGS */
+.helpline{
+    background-color:rgb(51, 217, 220);
+    font-size: 60px;
+    color: white;
+    font-weight: 700;
+    height: 60px;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+/* TABLE 1 & 2 */
+table{
+    vertical-align: middle;
+    border-color: rgb(189, 185, 181);
+    margin: 10px 0;
+    padding: 2px;
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 8px solid white;
+    margin: auto;
+    padding: 20px;
+    border-collapse: collapse;
+     
+}
+.helpline_table{
+    padding-bottom: 0px;
+    margin-bottom: 22px;
+
+}
+.table_heading{
+    text-align: center;
+    font-weight: 900;
+}
+tr:nth-of-type(odd){
+    background: rgb(121, 215, 238);
+}
+tr:nth-of-type(even){
+    background: rgb(89, 182, 233);
+}
+tbody tr{
+    border-top: 1px solid #ccc;
+}
+td{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+p{
+    margin: 10px;
+}
+
+a{
+    text-decoration: none;   
+}
+
+.nextpage{
+    background-color: aquamarine;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 700;
+}
